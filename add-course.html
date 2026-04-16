@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata about the page -->
+    <meta charset="UTF-8">
+    <title>Halvorsen - Add a course</title>
+
+    <!-- Icon configuration -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- Font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Link to the .css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <!--  <img src="/LogoHEADER.png" alt="Halvorsen" class="logo-img">  -->
+    <span class="logo-name">Halvorsen</span>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">My Courses</a>
+        <a href="add-course.html" class="active">Add Course</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Add a course</h1>
+    <p>Feel free to add any new courses.</p>
+
+</div>
+<main>
+        <!--  Adding a course form -->
+        <div class="ac-form">
+            <h2 class="ac_form-title">Course details</h2>
+<!-- Course name row  -->
+            <div class="ac_form-row">
+                <label class="ac_form-label">Course name</label>
+                <input class="ac_form-input" type="text">
+            </div>
+<!-- Course code row    -->
+            <div class="ac_form-row">
+                <label class="ac_form-label">Course code</label>
+                <input class="ac_form-input mono" type="text" placeholder="e.g. IT223">
+            </div>
+<!-- Instructor       -->
+            <div class="ac_form-row">
+                <label class="ac_form-label">Instructor</label>
+                <input class="ac_form-input"  type="text" placeholder="e.g. Asst. Prof. Tim Berners Lee">
+            </div>
+
+<!-- Schedule row -->
+            <div class="ac_form-row">
+                <label class="ac_form-label">Schedule</label>
+                <input class="ac_form-input" rows="2" type="text" placeholder="e.g. DD:HH" >
+            </div>
+<!-- Credits -->
+            <div class="ac_form-row">
+                <label class="ac_form-label">Credit hours</label>
+                <input class="ac_form-input"  type="text">
+            </div>
+<!-- Notes -->
+            <div class="ac_form-row">
+                <label class="ac_form-label">Notes</label>
+                <textarea class="ac_form-input" rows="4" placeholder="Any notes about this course..."></textarea>
+            </div>
+<!--Amphitheater  -->
+            <div class="ac_form-row">
+                <label class="ac_form-label">Amphitheater Number or Location</label>
+                <input class="ac_form-input"  type="text" placeholder="e.g. Hall 6, Amphitheatre 7B">
+            </div>
+
+            <button class="submit-btn">Add</button>
+        </div>
+
+</main>
+
+<footer>
+    <p>© 2026 Halvorsen · Built for students</p>
+</footer>
+</body>
+</html>
