@@ -635,20 +635,87 @@ tr:hover td {
 }
 
 
+/* ── Responsive Section ── */
+@media (max-width: 768px) {
+    /* Stack the header and nav for more room */
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
 
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    /* Collapse About cards and Courses cards to 1 column */
+    .about-cards, 
+    .cards-row {
+        grid-template-columns: 1fr;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 
+    /* Fix the "Add Course" form margins so it isn't crushed */
+    .ac-form {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 20px;
+    }
 
+    /* Make the logo/hero image larger on mobile */
+    .image-with-caption img {
+        max-width: 90%;
+    }
 
+    /* Stack contact info and form (already in your code, keeping for consistency) */
+    .contact-body {
+        grid-template-columns: 1fr;
+        padding: 24px 16px;
+    }
 
-/* ── Responsive ── */
+    /* Adjust font sizes for smaller screens */
+    .hero strong {
+        font-size: 28px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    /* Allow the table to scroll horizontally without breaking the page width */
+    .table-section {
+        padding: 0 16px 40px;
+    }
+    
+    .table-wrap {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px; /* Ensures table doesn't get too squashed to read */
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    nav a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+    
+    .logo-name {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 768px) {
     table {
         display: block;
         overflow-x: auto;
     }
 }
-/* ── Responsive ── */
 @media (max-width: 768px) {
     .contact-body {
         grid-template-columns: 1fr;
