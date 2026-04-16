@@ -1,0 +1,656 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.course-code, .student-id {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* To center any paragraph */
+.centered-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+.image-with-caption img {
+    display: flex;
+    max-width: 56%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    gap: 40px;
+    /* Optional rounded corners */
+}
+
+
+
+/* Hero section */
+.hero {
+    background-color: #1e293b;
+    padding: 60px 24px;
+    text-align: center;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.hero strong {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 600;
+    display: block;
+    margin: 8px 0;
+}
+
+/* ── Variables ── */
+:root {
+    --navy: #2D2B6B;
+    --offwhite: #F5F3EB;
+    --navy-muted: #4a4899;
+    --text-muted: #94a3b8;
+}
+
+/* ── Base ── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--offwhite);
+    color: var(--navy);
+}
+
+/* ── Header ── */
+header {
+    background-color: var(--navy);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--offwhite);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ── Navbar ── */
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--offwhite);
+}
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--offwhite);
+}
+
+/* ── Hero ── */
+.hero {
+    background-color: var(--navy);
+    padding: 72px 24px;
+    text-align: center;
+    border-bottom: 3px solid var(--navy-muted);
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.hero strong {
+    color: var(--offwhite);
+    font-size: 32px;
+    font-weight: 600;
+    display: block;
+    margin: 10px 0;
+    letter-spacing: 0.5px;
+}
+
+/* ── Variables ── */
+:root {
+    --navy: #1a1844;
+    --offwhite: #F5F3EB;
+    --navy-muted: #2D2B6B;
+    --text-muted: #cbd5e1;
+}
+
+/* ── Hero ── */
+.hero {
+    background-color: var(--navy);
+    padding: 72px 24px;
+    text-align: center;
+    border-bottom: 3px solid var(--navy-muted);
+}
+
+.hero p {
+    color: var(--offwhite);
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.hero strong {
+    color: var(--offwhite);
+    font-size: 38px;
+    font-weight: 600;
+    display: block;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+/* ── About Section ── */
+.about {
+    padding: 64px 32px;
+    background-color: var(--offwhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.about h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.about p {
+    font-size: 15px;
+    color: #4a4869;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+    width: 100%;
+    max-width: 860px;
+}
+
+.about-card {
+    background: #ffffff;
+    border: 0.5px solid #ddd8cc;
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: left;
+}
+
+.about-card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.about-card p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+}
+footer {
+    background-color: #ffffff;
+    padding: 20px 32px;
+    text-align: center;
+    border-top: 3px solid var(--navy-muted);
+}
+/* For the logo in the header */
+.logo-img {
+    height: 48px;
+    width: auto;
+}
+/* For the title in the header */
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo-name {
+    color: var(--offwhite);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ── Page Hero (used on inner pages) ── */
+.hero h1 {
+    color: var(--offwhite);
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.hero p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* ── Contact Page ── */
+.contact-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 40px 32px;
+    background-color: var(--offwhite);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-info-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+
+.info-item {
+    background: #ffffff;
+    border: 0.5px solid #ddd8cc;
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.info-item:hover {
+    border-color: var(--navy);
+}
+
+.info-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e8e6f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.info-label {
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.info-value {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-top: 2px;
+}
+
+/* ── Contact Form ── */
+.contact-form {
+    background: #ffffff;
+    border: 0.5px solid #ddd8cc;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.form-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.form-row {
+    margin-bottom: 14px;
+}
+
+.form-label {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 9px 12px;
+    border: 0.5px solid #ddd8cc;
+    border-radius: 8px;
+    font-size: 13px;
+    background: #f8f7f3;
+    color: var(--navy);
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--navy);
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 0.5px solid #ddd8cc;
+    border-radius: 8px;
+    font-size: 13px;
+    background: #f8f7f3;
+    color: var(--navy);
+    resize: none;
+    transition: 0.3s;
+}
+
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--navy);
+}
+
+.submit-btn {
+    background: var(--navy);
+    color: var(--offwhite);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: var(--navy-muted);
+}
+
+
+.courses-card {
+    background-color: #ffffff;
+/* Makes the background color offwhite by the variables we declared in root.  */
+    border: 0.5px solid #ddd8cc;
+/* Thickness : Style : color (Parameters)
+(All three values are required for the border to be shown)  */
+    border-radius: 10px;
+    padding: 20px 16px;
+    /*Inner spacing*/
+    text-align: center;
+}
+.cards-row {
+    display: grid;
+    /* Turns this div into a grid container.
+    Its direct children (the 3 cards) will now be arranged in a grid. */
+    grid-template-columns: repeat(3, 1fr);
+    /* Defines 3 columns of equal width. 1fr means "1 fraction of available space".
+       */
+    gap: 12px;
+    /*Gap between each card and another*/
+    margin-top: 24px;
+    margin-bottom: 28px;
+    margin-left: 24px;
+    margin-right: 24px;
+    /* No explain needed  */
+}
+.courses-card-title {
+    font-size: 26px;
+    /* Kinda large  */
+    font-weight: 600;
+    /* How bold the text is */
+    color: var(--navy);
+
+}
+.courses-card-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #94a3b8;
+    /*  muted gray-blue  */
+    margin-top: 2px;
+    /*Adds a little space between the title and the label    */
+}
+
+
+
+/* ── Table Section ── */
+.table-section {
+    padding: 0 24px 40px;
+    background-color: var(--offwhite);
+}
+
+.table-wrap {
+    background: #ffffff;
+    border: 0.5px solid #ddd8cc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table-header {
+    background: #fafaf7;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #ddd8cc;
+}
+
+.table-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.add-course-btn {
+    background: var(--navy);
+    color: var(--offwhite);
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 7px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.add-course-btn:hover {
+    background: var(--navy-muted);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /*  removes spacing between cell borders. */
+    font-size: 13px;
+}
+
+th {
+    /* Properties configurations, found in the header*/
+    background: var(--navy);
+    color: #94a3b8;
+    padding: 10px 16px;
+    text-align: left;
+    font-weight: 500;
+    border-bottom: 0.5px solid #ddd8cc;
+}
+
+td {
+    /* Data cells configurations */
+    padding: 11px 16px;
+    border-bottom: 0.5px solid #f1efe8;
+    color: var(--navy);
+}
+
+tr:last-child td {
+    border-bottom: none;
+    /* removes the last border as the last row has its own border than the wrapper border.  */
+}
+
+tr:nth-child(even) td {
+    background: #fafaf7;
+    /* Gives this color to the even data rows   */
+}
+
+tr:hover td {
+    background: #f1efe8;
+    /* When hovered apply this color    */
+}
+
+/*  Mono font for course codes  */
+.mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #4a4869;
+}
+
+
+/* ── Add course form ── */
+.ac-form {
+    background: #ffffff;
+    border: 0.5px solid #ddd8cc;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+    margin-left: 124px;
+    margin-right: 124px;
+}
+
+.ac_form-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.ac_form-row {
+    margin-bottom: 14px;
+}
+
+.ac_form-label {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.ac_form-input {
+    width: 100%;
+    padding: 9px 12px;
+    border: 0.5px solid #ddd8cc;
+    border-radius: 8px;
+    font-size: 13px;
+    background: #f8f7f3;
+    color: var(--navy);
+    transition: 0.3s;
+}
+
+.ac_form-input:focus {
+    outline: none;
+    border-color: var(--navy);
+}
+
+.ac_form-textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 0.5px solid #ddd8cc;
+    border-radius: 8px;
+    font-size: 13px;
+    background: #f8f7f3;
+    color: var(--navy);
+    resize: none;
+    transition: 0.3s;
+}
+
+.ac_form-textarea:focus {
+    outline: none;
+    border-color: var(--navy);
+}
+
+.add-btn {
+    background: var(--navy);
+    color: var(--offwhite);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: var(--navy-muted);
+}
+
+
+
+
+
+
+
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .contact-body {
+        grid-template-columns: 1fr;
+    }
+}
